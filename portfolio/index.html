@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Lily+Script+One&display=swap" rel="stylesheet">
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/plugin/scrolla.jquery.min.js"></script>
+    <script src="./js/plugin/splitting.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <title>Seyeon's Portfolio</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <a href="index.html" class="logo"><img src="./img/이름로고디자인.svg" alt=""></a>
+            <a href="#" class="sideMenu"><span class="lnr lnr-menu"></span></a>
+        </header>
+        <div class="menuOpen">
+            <a href="#"><span class="lnr lnr-cross"></span></a>
+            <ul class="open">
+                <li><a href="index.html" data-splitting>Home</a></li>
+                <li><a href="about.html" data-splitting>About</a></li>
+                <li><a href="work.html" data-splitting>Work</a></li>
+                <li><a href="portfolio.html" data-splitting>Portfolio</a></li>
+                <li><a href="#" class="contact" data-splitting>Contact</a></li>
+            </ul>
+        </div>
+        <section class="mainTitle">
+            <div class="logo"><img src="./img/이름로고_수정_흰.png" alt=""></div>
+            <div class="title en origin">Welcome!</div>
+            <div class="title en mask">Welcome!</div>
+        </section>
+        <section class="start">
+            <div class="text">
+                <p>this is <span>cho seyeon</span>'s Portfolio</p>
+                <p class="a">Let's Start</p>
+                <i class="fa fa-angle-double-down"></i>
+            </div>
+        </section>
+        <section class="visual">
+            <div class="subTitle">
+                <p><span class="img"><img src="./img/arrow01.svg" alt=""></span> SLOGAN / VIDEO</p>
+            </div>
+            <div class="text">
+                <p class="en a">“Carpe Diem"</p>
+                <span class="ko">지금 이 순간, 현재에 충실하라</span>
+                <p class="b">SEIZE THE DAY</p>
+            </div>
+            <div class="video">
+                <div class="videoWrap">
+                    <video autoplay="" muted="" loop="" playinline=""><source src="http://csyeon.com/portfolio/video/visual_video.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </section>
+        <section class="hello">
+            <div class="subTitle">
+                <p><span class="img"><img src="./img/arrow01.svg" alt=""></span> HELLO!</p>
+            </div>
+            <div class="text animate" data-animate="motion">
+                <p data-splitting>Responsibility <span>&</span> Communication</p>
+                <p class="ko">저의 강점인 '<i>책임감</i>'과 '<i>소통</i>'을 바탕으로 맡은 바 최선을 다하며,<br>합리적이고 능률적으로 업무를 수행하는 웹 퍼블리셔 <i>조세연</i>입니다.</p>
+            </div>
+        </section>
+        <section class="about">
+            <div class="subTitle">
+                <p><span class="img"><img src="./img/arrow01.svg" alt=""></span> ABOUT ME</p>
+            </div>
+            <div class="cardBox">
+                <div class="front"><img src="./img/seyeon_img.png" alt=""></div>
+                <div class="profile">
+                    <ul>
+                        <li>
+                            <div class="tit">PROFILE</div>
+                            <div class="info">
+                                <span>Name : 조세연</span>
+                                <span>Age : 28(만27)</span>
+                                <span>Birth : 1996.10.12</span><br>
+                                <span class="email">Email : esther020254@gmail.com</span>
+                                <span class="tel">Tel : 010.5188.6608</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tit">EDUCATION</div>
+                            <div class="info">
+                                <span>2023.04 - 2023.10 : 이젠DX센터 강남 UX/UI 디자인 & 프론트엔드</span>
+                                <span>2022.03 - 2022.08 : 그린아카데미 UX/UI 디자인 & 프론트엔드</span>
+                                <span>2016.03 - 2021.02 : 성신여자대학교</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tit">LICENSE</div>
+                            <div class="info">
+                                <span>2022.11 : 운전면허 자격증 (2종보통)</span>
+                                <span>2022.09 : 웹디자인기능사</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tit">SKILL</div>
+                            <div class="info">
+                                <span>HTML / CSS / jQUERY / JAVASCRIPT / FIGMA / PHOTOSHOP / ILLUSTRATOR</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="about2">
+            <div class="split-lines">
+                We learn more<br class="mo">from
+                losing than we<br class="mo"> do from winning.<br class="mo">
+                I guess that makes<br class="mo"> me
+                smartest person <br class="mo">in the world.
+            </div>
+            <div class="split-lines kor">
+                실패를 두려워하지 않고
+                거름으로 삼아 성장하는,<br class="mo">
+                긍정적인 웹퍼블리셔 '조세연'입니다.
+            </div>
+            <div class="viewMore">
+                <a href="about.html"><span>View More</span><span class="img"><img src="./img/arrow02.svg" alt=""></span></a>
+            </div>
+        </section>
+        <section class="clone">
+            <div class="subTitle">
+                <p><span class="img"><svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                    y="0px" viewBox="0 0 15.8 14.2" style="enable-background:new 0 0 15.8 14.2;" xml:space="preserve">
+            <style type="text/css">.st1{fill:none;stroke:#000;stroke-width:0.5;stroke-miterlimit:10;}</style>
+            <g>
+                <path class="st1" d="M8.5,0c1.1,7.2,7.3,7.1,7.3,7.1"/>
+                <path class="st1" d="M15.8,7.1c0,0-6.1-0.2-7.3,7.1"/>
+                <line class="st1" x1="0.2" y1="7.1" x2="14.8" y2="7.1"/>
+            </g>
+            </svg></span> CLONE CODING</p>
+            </div>
+            <ul class="codingList">
+                <li>
+                    <div class="img"><img src="./img/index_work1.png" alt=""></div>
+                    <div class="textBox">
+                        <p>2022</p>
+                        <p class="tit">POFO</p>
+                        <div class="iconBox">
+                            <a href="https://haha020254.github.io/pofo/" target="_blank"><span class="icon"><img src="./img/icon_com.png" alt=""></span></a>
+                            <a href="https://haha020254.github.io/pofo/" target="_blank" onclick="window.open(this.href,'','width=980, height=960'); return false"><span class="icon"><img src="./img/icon_tablet.png" alt=""></span></a>
+                            <a href="https://haha020254.github.io/pofo/" target="_blank" onclick="window.open(this.href,'','width=540, height=960'); return false"><span class="icon"><img src="./img/icon_phone.png" alt=""></span></a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="textBox">
+                        <p>2023</p>
+                        <p class="tit">Crew à la Mode</p>
+                        <div class="iconBox">
+                            <a href="http://csyeon.dothome.co.kr/crew" target="_blank"><span class="icon"><img src="./img/icon_com.png" alt=""></span></a>
+                            <a href="http://csyeon.dothome.co.kr/crew" target="_blank" onclick="window.open(this.href,'','width=1024, height=960'); return false"><span class="icon"><img src="./img/icon_tablet.png" alt=""></span></a>
+                            <a href="http://csyeon.dothome.co.kr/crew" target="_blank" onclick="window.open(this.href,'','width=500, height=960'); return false"><span class="icon"><img src="./img/icon_phone.png" alt=""></span></a>
+                        </div>
+                    </div>
+                    <div class="img"><img src="./img/index_work2.png" alt=""></div>
+                </li>
+                <li>
+                    <div class="img"><img src="./img/index_work3.png" alt=""></div>
+                    <div class="textBox">
+                        <p>2023</p>
+                        <p class="tit">Daebang</p>
+                        <a href="http://csyeon.dothome.co.kr/daebang" target="_blank"><span class="icon"><img src="./img/icon_com.png" alt=""></span></a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="uiux">
+            <div class="subTitle">
+                <p><span class="img"><img src="./img/arrow01.svg" alt=""></span> UI / UX</p>
+            </div>
+            <ul class="uiuxList">
+                <li>
+                    <div class="img"><img src="./img/index_work4.png" alt=""></div>
+                    <div class="textBox">
+                        <p>2023</p>
+                        <span>UI / UX Redesign | Team Project</span>
+                        <p class="tit">Kakao Webtoon</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="textBox">
+                        <p>2023</p>
+                        <span>UI 구현 | Homepage Renewal</span>
+                        <!-- <p class="tit">Hyndai <br class="mo">Engineering & Construction</p> -->
+                        <p class="tit ko">현대건설</p>
+                        <div class="iconBox">
+                            <a href="http://csyeon.dothome.co.kr/hyundai" target="_blank"><img src="./img/Vector.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="img"><img src="./img/index_work5.png" alt=""></div>
+                </li>
+            </ul>
+            <div class="viewMore">
+                <a href="work.html"><span>More Works</span><span class="img"><img src="./img/arrow02.svg" alt=""></span></a>
+            </div>
+        </section>
+        <section class="ncs">
+            <div class="subTitle">
+                <p><span class="img"><img src="./img/arrow01.svg" alt=""></span> NCS PROCESS</p>
+            </div>
+            <div class="ncsList">
+                <ul class="list">
+                    <li class="a">
+                        <div class="box">
+                            <img src="./img/ncs1.jpg" alt="">
+                            <a href="http://csyeon.com/portfolio/pdf/UI%EB%94%94%EC%9E%90%EC%9D%B8_teamproject.pdf" target="_blank">View More</a>
+                        </div>
+                    </li>
+                    <li class="b">
+                        <div class="box">
+                            <img src="./img/ncs2_.jpg" alt="">
+                            <a href="http://csyeon.com/portfolio/pdf/UI%EB%94%94%EC%9E%90%EC%9D%B8_%ED%98%84%EB%8C%80%EA%B1%B4%EC%84%A4.pdf" target="_blank">View More</a>
+                        </div>
+                    </li>
+                    <li class="c">
+                        <div class="box">
+                            <img src="./img/ncs3.jpg" alt="">
+                            <a href="http://csyeon.com/portfolio/pdf/UI%EA%B5%AC%ED%98%84_%ED%98%84%EB%8C%80%EA%B1%B4%EC%84%A4.pdf" target="_blank">View More</a>
+                        </div>
+                    </li>
+                    <li class="b">
+                        <div class="box">
+                            <img src="./img/ncs4_.jpg" alt="">
+                            <a href="http://csyeon.com/portfolio/pdf/UI%ED%85%8C%EC%8A%A4%ED%8A%B8_%ED%98%84%EB%8C%80%EA%B1%B4%EC%84%A4.pdf" target="_blank">View More</a>
+                        </div>
+                    </li>
+                    <li class="a">
+                        <div class="box">
+                            <img src="./img/ncs5.jpg" alt="">
+                            <a href="http://csyeon.com/portfolio/pdf/UIUX_%EC%BD%98%EC%85%89%ED%8A%B8%EA%B8%B0%ED%9A%8D.pdf" target="_blank">View More</a>
+                        </div>
+                    </li>
+                    <li class="c">
+                        <div class="box">
+                            <img src="./img/ncs6.jpg" alt="">
+                            <a href="http://csyeon.com/portfolio/pdf/UIUX_%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90%EC%84%A4%EA%B3%84.pdf" target="_blank">View More</a>
+                        </div>
+                    </li>
+                    <li class="b">
+                        <div class="box">
+                            <img src="./img/ncs7.jpg" alt="">
+                            <a href="http://csyeon.com/portfolio/pdf/UIUX%EC%9A%94%EA%B5%AC%EB%B6%84%EC%84%9D.pdf" target="_blank">View More</a>
+                        </div>
+                    </li>
+                    <li class="a">
+                        <div class="box">
+                            <img src="./img/ncs8.jpg" alt="">
+                            <a href="#">View More</a>
+                        </div>
+                    </li>
+                    <li class="c">
+                        <div class="box">
+                            <img src="./img/ncs9.jpg" alt="">
+                            <a href="#">View More</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <div class="subTitle">
+                <p><span class="img"><svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                    y="0px" viewBox="0 0 15.8 14.2" style="enable-background:new 0 0 15.8 14.2;" xml:space="preserve">
+            <style type="text/css">.st1{fill:none;stroke:#000;stroke-width:0.5;stroke-miterlimit:10;}</style>
+            <g>
+                <path class="st1" d="M8.5,0c1.1,7.2,7.3,7.1,7.3,7.1"/>
+                <path class="st1" d="M15.8,7.1c0,0-6.1-0.2-7.3,7.1"/>
+                <line class="st1" x1="0.2" y1="7.1" x2="14.8" y2="7.1"/>
+            </g>
+            </svg></span> CONTACT ME</p>
+            </div>
+            <div class="textBox animate" data-animate="motion">
+                <p class="en">Keep in touch</p>
+                <div class="email">
+                    <span>Looking foward to working with you</span>
+                    <p>esther020254@gmail.com</p>
+                </div>
+                <div class="tel">
+                    <span>Tel</span>
+                    <p>+82 10 5188 6608</p>
+                </div>
+                <p class="copyright">COPYRIGHT 2023. S.yeon.</p>
+            </div>
+        </footer>
+        <div class="goTop">
+            <a href="#" class="btn">
+                <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 9.5 11.2" style="enable-background:new 0 0 9.5 11.2;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+                </style>
+                <g>
+                    <path class="st0" d="M0,5.2C4.8,4.4,4.7,0,4.7,0"/>
+                    <path class="st0" d="M4.8,0c0,0-0.1,4.4,4.7,5.2"/>
+                    <line class="st0" x1="4.8" y1="11.2" x2="4.8" y2="0.7"/>
+                </g>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+
+
+    <script>
+        // 가로스크롤
+    gsap.registerPlugin(ScrollTrigger);
+
+    ScrollTrigger.matchMedia({
+        '(min-width:1024px)':function(){
+            
+let list = gsap.utils.toArray('.ncsList .list li')
+let listA = gsap.utils.toArray('.ncsList .list .a')
+let listB = gsap.utils.toArray('.ncsList .list .b')
+let listC = gsap.utils.toArray('.ncsList .list .c')
+
+let scrollTween = gsap.to(list, {
+    xPercent: -100*(list.length - 1),
+    ease: 'none',
+    scrollTrigger: {
+        trigger : '.ncs',
+        pin: true,
+        scrub: 3,
+        start: 'center center',
+        end: '200%',
+        //markers: true
+    }
+});
+
+// 스크롤시 박스 흔들리는 효과
+gsap.to(listA, {
+    y: 20,
+    rotation: -5,
+    scrollTrigger: {
+        trigger: '.ncsList',
+        spin: true,
+        scrub: 1,
+        end:'300%',
+    }
+});
+gsap.to(listB, {
+    y: -10,
+    rotation: 10,
+    scrollTrigger: {
+        trigger: '.ncsList',
+        spin: true,
+        scrub: 1,
+        end:'300%',
+    }
+});
+gsap.to(listC, {
+    y: 10,
+    rotation: -15,
+    scrollTrigger: {
+        trigger: '.ncsList',
+        spin: true,
+        scrub: 1,
+        end:'300%',
+    }
+});
+        }
+    })
+    </script>
+</body>
+</html>

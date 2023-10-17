@@ -1,0 +1,290 @@
+@charset "utf-8";
+
+
+/* body */
+body {background:#000;font-family:'kufam';font-size:16px;color:#fff;}
+.en {font-family: 'Lily script one';}
+.ko {font-family: 'NanumSquareRound';}
+
+.wrap {width:100%;height:100%;position:relative;overflow: hidden;background: #000;color:#fff;}
+
+/* header */
+header {width:100%;position:fixed;left:0;top:0;background:rgba(0,0,0,.5);z-index:50;padding:30px 60px;box-sizing:border-box;display:flex;justify-content:space-between;}
+
+header.active {transform: translateY(-100%);}
+
+header .logo {display:block;width:5%;transform:rotate(19deg);}
+header .sideMenu {font-size:30px;}
+header .sideMenu.on {display:none;}
+.menuOpen {display:block;width:30%;height:100vh;background:rgba(51,51,51,.9);position:fixed;top:0;right:-100%;padding:250px 50px;transition:all .3s;z-index:51;}
+.menuOpen.on {right:0%;transition:all .3s;}
+.menuOpen > a > span {display:block;font-size:40px;position:absolute;top:3%;right:9%;color:#fff;}
+.menuOpen .open {text-align:center;font-size:57px;line-height:1.5;width:100%;margin:0 auto;}
+
+
+.menuOpen .open li a .char {display:inline-block;position:relative;color:transparent;overflow: hidden;}
+.menuOpen .open li a .char::before,
+.menuOpen .open li a .char::after {
+    position:absolute;left:0;top:0;opacity:.6;color:#fff;content:attr(data-char);transition:transform .35s;transition-delay:calc(30ms * var(--char-index));
+}
+.menuOpen .open li a .char::before{transform:translateY(100%);}
+
+.menuOpen .open li a:hover .char::before {transform:translateY(0%);opacity:1;}
+.menuOpen .open li a:hover .char::after {transform:translateY(-100%);opacity:.6;}
+
+.visual {width:100%;height:100vh;position:relative;padding-top:125px;box-sizing:border-box;letter-spacing:-2px;}
+.visual .mainText {font-size:110px;font-weight:400;line-height:1.2;margin:80px 0 120px 160px;display:inline-block;}
+.visual .mainText p {overflow: hidden;}
+.visual .subText {margin-left:160px;font-size:40px;}
+.visual .svgAni {position:absolute;right:5%; top:25%;width:50%;transform:rotate(3deg);}
+
+.visual.motion .mainText {transform:translate3d(0,0,0) skewY(0deg);overflow: hidden;}
+.visual.motion .mainText p span.i {display:block;animation-name:textAni;animation-duration:1.8s;font-style:italic;}
+.visual.motion .mainText p span {display:block;animation-name:textAni;animation-duration:1.8s;}
+.visual.motion .mainText p:nth-child(2) span {display:block;animation-name:textAni;animation-duration:1.7s;}
+.visual.motion .mainText p:nth-child(3) span {display:block;animation-name:textAni;animation-duration:1.5s;}
+
+.visual.motion .subText {animation-name:textAni2;animation-duration:2.3s;}
+
+@keyframes textAni {
+    0% {opacity:0;}
+    30% {opacity:0;transform:translate3d(0,-90px,0) skewY(-10deg);transform-origin:top left;}
+}
+
+@keyframes textAni2 {
+    0% {opacity:0;}
+    30% {opacity:0;}
+}
+
+.visual.motion #svgAni06 {stroke-dasharray:72;stroke-dashoffset:72;animation:ani6 .5s linear 1.3s forwards;}
+.visual.motion #svgAni04 {stroke-dasharray:2759;stroke-dashoffset:2759;animation:ani4 2s linear 1.8s forwards;}
+.visual.motion #svgAni05 {stroke-dasharray:1332;stroke-dashoffset:1332;animation:ani5 .5s linear 1s forwards;}
+
+
+@keyframes ani4 {
+    0% {stroke-dasharray:2761;}
+    100% {stroke-dashoffset:0;}
+}
+
+@keyframes ani5 {
+    0% {stroke-dasharray:1334;}
+    100% {stroke-dashoffset:0;}
+} 
+
+@keyframes ani6 {
+    0% {stroke-dasharray:72;}
+    100% {stroke-dashoffset:0;}
+}
+
+
+/* mockup */
+
+.mockup {width:100%;height:110vh;overflow:hidden;position:relative;}
+.mockup .img {width:100%;height:100%;}
+.mockup .img img{width:100%;}
+
+
+/* coding */
+.coding {width:100%;height:100%;position:relative;z-index:2;background:#000;}
+.coding .title {font-size:200px;position:absolute;top:0;right:0%;margin-top:150px;letter-spacing:-2px;font-weight:500;}
+.coding .codingList {width:95%;margin:0 auto; padding-top:500px;}
+.coding .codingList li {border-top:1px solid #fff ;padding:60px 0;position:relative;}
+.coding .codingList li:hover {color:#f4c752;transition:all .3s;}
+.coding .codingList li:hover a span::before {border:1px solid #f4c752;transition:all .3s;}
+.coding .codingList li a {display:flex;width:100%;height:100%;}
+.coding .codingList li a span {font-size:25px;position:relative;display:inline-block;margin:35px 50px 0 30px;line-height:60px;}
+.coding .codingList li a span::before{content:'';position:absolute;top:-10px;left:-20px;border:1px solid #fff;border-radius:50%;width:70px;height:70px;}
+.coding .codingList li a .txt p.tit {font-size:120px;}
+.coding .codingList li a .txt p {font-size:20px;letter-spacing:5px;}
+.coding .codingList li a .txt p.tit i {font-size:70px;}
+.coding .codingList li a .fadeImg {position:fixed;left:0;top:0;width:500px;height:264px;object-fit:cover;opacity:0;z-index:2;}
+
+/* ncs */
+.ncs {width:100%;height:100%;position:relative;}
+.ncs .title {font-size:200px;position:absolute;top:0;right:0%;margin-top:150px;letter-spacing:-2px;font-weight:500;}
+
+.ncsBox {width:100%;height:110vh;position:relative;z-index:4;}
+.ncsBox .left {width:50%;height:110vh;padding:115px 0 0 170px;background:#fff;color:#000;}
+.ncsBox .right {width:50%;height:110vh;position:relative;overflow:hidden;}
+.ncs01 {margin-top:500px;}
+.ncs01 .right, .ncs04 .right, .ncs05 .right {background:#000;}
+.ncs02 .right, .ncs06 .right, .ncs07 .right {background: #323844;}
+.ncs03 .right {background: #312D3C;}
+
+
+.ncsBox .cloneWrap {position:relative;overflow: hidden;}
+.ncsBox .cloneWrap .contBox {display:flex;justify-content:space-between;}
+.ncsBox .cloneWrap .contBox .left h3 {font-size:80px;color:#000;font-weight:normal;margin-bottom:150px;}
+.ncsBox .cloneWrap .contBox .left span.team {font-size:30px;letter-spacing:-3px;}
+.ncsBox .cloneWrap .contBox .left p.tit {font-size:100px;letter-spacing:-8px;font-weight:bold;margin-bottom:25px;}
+.ncsBox .cloneWrap .contBox .left p.text {font-size:25px;letter-spacing:-2px;line-height:33px;}
+
+.ncsBox .viewMore {width:40%;text-align:center;margin:150px 150px;}
+.ncsBox .viewMore a {display:block;width:100%;height:100%;}
+.ncsBox .viewMore a:hover span.img::before {left:26px;transition:all .5s;}
+.ncsBox .viewMore a span {font-size:30px;margin-right:20px;font-weight:400;position:relative;z-index:0;}
+.ncsBox .viewMore a span.img::before {content:'';position:absolute;width:50px;height:50px;border:1px solid #000;border-radius:50%;top:-8px;left:40px;transition:all .5s;z-index:-1;}
+.ncsBox .viewMore a span.img {width:60px;height:33px;display:inline-block;margin-top:10px;}
+.ncsBox .viewMore a span.img img {width:100%;}
+
+.ncsBox .right .img {width:100%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+.ncsBox .right .img img {width:100%;}
+.ncs01 .right .img,
+.ncs04 .right .img,
+.ncs05 .right .img {width:65%;}
+.ncs01 .right .img img,
+.ncs04 .right .img img,
+.ncs05 .right .img img {width:100%;}
+
+
+
+/* footer */
+footer {width:100%;height:100vh;position:relative;padding:0 260px;background:#000;z-index:4;}
+footer .subTitle {color:#444;}
+footer .subTitle p {font-size:30px;letter-spacing:-1px;padding-top:130px;}
+footer .subTitle p .img {width:30px;height:30px;display:inline-block;}
+footer .subTitle p .img img {width:100%;}
+footer .textBox {margin-top:100px;color:#444;}
+footer .textBox p {font-size:80px;}
+footer .textBox .email {margin-top:60px;margin-bottom:40px;}
+footer .textBox .email span,
+footer .textBox .tel span {font-size:20px;letter-spacing:-1px;}
+footer .textBox .email p,
+footer .textBox .tel p {font-size:40px;}
+footer .textBox .copyright {font-size:18px;color:#ccc;margin-top:100px;}
+
+/* goTop */
+.goTop a.btn {width:50px;height:50px;position:fixed;bottom:70px;right:50px;border:1px solid #fff;border-radius:50%;z-index:5;}
+.goTop a.btn svg {width:35%;margin:14px auto 0;display:block;}
+
+
+
+/* responsive */
+
+/* pc 1650px ~ 1301px */
+@media screen and (max-width:1650px) {
+    .visual .mainText {margin:80px 120px 100px;}
+    header .logo {width:7%;}
+    .visual .subText {margin-left:100px;}
+    .visual .svgAni {top:31%;right:1%;}
+    .mockup {height:110vh;}
+    .mockup .imgBox {height:100%;}
+    .mockup .imgBox img {width:100%;}
+    .coding .title {font-size:170px;}
+    .coding .codingList {padding-top:400px;}
+    .ncs .title {font-size:170px;}
+    .ncsBox .left {padding:100px 0 0 100px;}
+    .ncsBox .viewMore {width:50%;margin:130px 70px;}
+    .ncsBox .cloneWrap .contBox .left p.tit {font-size:85px;}
+    .ncsBox .cloneWrap .contBox .left p.text {font-size:22px;}
+}
+
+/* 1300px ~ 1025px */
+@media screen and (max-width:1300px) {
+    .visual .mainText {margin: 100px 80px 100px;font-size:90px;}
+    .visual .subText {margin-left:80px;font-size:30px;}
+    .visual .svgAni {top:33%;right:0%;}
+    header .logo {width:9%;}
+    footer {padding:0 150px;}
+    .menuOpen {width:35%;}
+    .menuOpen .open {font-size:50px;}
+    .mockup {height:70vh;}
+    .mockup .imgBox {height:100%;}
+    .mockup .imgBox img {width:100%;}
+    .coding .title {font-size:140px;}
+    .coding .codingList li a .txt p.tit {font-size:95px;}
+    .ncs .title {font-size:140px;}
+    .ncsBox .left {padding:80px 0 0 50px;}
+    .ncsBox .viewMore {width:50%;margin:130px 50px;}
+    .ncsBox .cloneWrap .contBox .left p.tit {font-size:70px;}
+}
+
+/* 1024px ~ 801px */
+@media screen and (max-width:1024px) {
+    header .logo {width:11%;}
+    .visual {height:90vh;}
+    .visual .mainText {margin:120px 50px 100px;font-size:70px;}
+    .visual .subText {margin-left:50px;font-size:25px;}
+    footer  {padding:0 100px;}
+    .menuOpen {width:40%;}
+    .menuOpen .open {font-size:45px;}
+    .mockup {height:70vh;}
+    .mockup .imgBox {height:100%;}
+    .mockup .imgBox img {width:100%;}
+    .coding .title {font-size:100px;}
+    .coding .codingList li a .txt p.tit {font-size:70px;}
+    .coding .codingList li a span {font-size:20px;line-height:53px;margin:20px 50px 0 30px;}
+    .coding .codingList li a span::before {width:65px;height:65px;}
+    .ncs .title {font-size:100px;}
+    .ncsBox {height:100vh;}
+    .ncsBox .left {padding:100px 0 0 30px;}
+    .ncsBox .cloneWrap .contBox .left h3 {font-size:60px;}
+    .ncsBox .viewMore {width:65%;margin:130px 30px;}
+    .ncsBox .cloneWrap .contBox .left p.text {font-size:20px;}
+    .ncsBox .cloneWrap .contBox .left p.tit {font-size:65px;}
+}
+
+/* 800px ~ 501px */
+@media screen and (max-width:800px) {
+    header .logo {width:15%;} 
+    .visual {height:100vh;}
+    .visual .mainText {margin: 50px  0px  20px 50px;font-size:55px;}
+    .visual .svgAni {width:60%;top:60%;right:34%;transform:rotate(18deg);}
+    .visual .subText {margin-left:50px;font-size: 22px;letter-spacing:-1px;}
+    footer {padding:0 50px;}
+    .menuOpen {width:50%;padding:250px 30px;}
+    .menuOpen .open {font-size:40px;}
+    .mockup {height:65vh;}
+    .mockup .imgBox {height:100%;}
+    .mockup .imgBox img {width:100%;}
+    .coding .title {font-size:80px;}
+    .coding .codingList {padding-top:300px;}
+    .coding .codingList li a .txt p {font-size:15px;letter-spacing:2px;}
+    .coding .codingList li a .txt p.tit {font-size:38px;font-weight:600;}
+    .coding .codingList li a span {font-size:16px;line-height:38px;margin:10px 50px 0 30px;}
+    .coding .codingList li a span::before {width:50px;height:50px;left:-16px;}
+    .coding .codingList li a .fadeImg {position:fixed;left:0;top:0;width:300px;height:158px;object-fit:cover;opacity:0;z-index:2;}
+    .ncs .title {font-size:80px;}
+    .ncsBox {height:110vh;width:100vw;}
+    .ncsBox .cloneWrap .contBox {flex-wrap:wrap;}
+    .ncsBox .left {width:100%;padding:30px 0 0 30px;height:50vh;}
+    .ncsBox .right {width:100%;}
+    .ncs01 .right .img {width:60%;}
+    .ncsBox .cloneWrap .contBox .left h3 {font-size:50px;margin-bottom:50px;}
+    .ncsBox .viewMore {margin:30px 0;text-align:left;}
+    .ncsBox .viewMore a span {font-size:25px;}
+    .ncsBox .viewMore a span.img::before {width:40px;height:40px;top:-5px;}
+    .ncsBox .right .img {top:23%;}
+    
+
+}
+
+/* 500px~ */
+@media screen and (max-width:500px) {
+    .menuOpen {width:55%;}
+    .menuOpen .open {font-size: 35px;}
+    header .logo {width:18%;} 
+    .visual {height:80vh;}
+    .visual .mainText {margin: 50px  100px  20px;font-size:50px;}
+    .visual .svgAni {width:60%;top:70%;right:26%;transform:rotate(18deg);}
+    .visual .subText {margin-left:100px;font-size: 22px;letter-spacing:-1px;}
+    .mockup {height:30vh;}
+    .mockup .imgBox {height:100%;}
+    .mockup .imgBox img {width:100%;}
+    .coding .title {font-size:60px;margin-top:100px;}
+    .coding .codingList {padding-top:250px;}
+    .coding .codingList li a .txt p.tit {font-size:30px;}
+    .coding .codingList li a .txt p {font-size:12px;letter-spacing:1px;}
+    .coding .codingList li a span {font-size:14px;line-height:25px;margin:8px 50px 0 30px;}
+    .coding .codingList li a span::before {width:40px;height:40px;left:-13px;}
+    .coding .codingList li a .fadeImg {position:fixed;left:0;top:0;width:250px;height:132px;object-fit:cover;opacity:0;z-index:2;}
+    .ncs .title {font-size:60px;}
+    .ncsBox .cloneWrap .contBox .left p.tit {font-size:55px;letter-spacing:0;}
+    .ncsBox .cloneWrap .contBox .left h3 {font-size:40px;}
+    .ncsBox .cloneWrap .contBox .left p.text {font-size:18px;line-height:1.4;}
+    footer {padding:0 10px;height:100vh;}
+    footer .textBox p {font-size:70px;}
+    footer .textBox .email span, footer .textBox .tel span {font-size:15px;}
+    footer .textBox .email p, footer .textBox .tel p {font-size:30px;}
+    footer .textBox .copyright{font-size:15px;}
+}
